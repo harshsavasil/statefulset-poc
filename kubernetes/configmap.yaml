@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: websocket-server-config
+data:
+  server.conf: |
+    {
+      "port": 8080,
+      "maxConnections": 1000,
+      "logLevel": "info"
+    } 
