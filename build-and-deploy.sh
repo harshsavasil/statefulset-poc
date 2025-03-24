@@ -29,7 +29,6 @@ sudo docker build -t ${IMAGE_NAME} ./app
 echo "Deploying to MicroK8s..."
 microk8s kubectl apply -f kubernetes/configmap.yaml
 microk8s kubectl apply -f kubernetes/headless-service.yaml
-# microk8s kubectl apply -f kubernetes/client-facing-service.yaml
 microk8s kubectl apply -f kubernetes/websocket-statefulset.yaml
 # microk8s kubectl apply -f kubernetes/networkpolicy.yaml
 
