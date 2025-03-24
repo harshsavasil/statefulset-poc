@@ -44,7 +44,7 @@ Run the build and deploy script:
 1. Port forward the service to access the application:
 
 ```bash
-microk8s kubectl port-forward service/websocket-server-external 8080:80
+microk8s kubectl port-forward service/websocket-server 8080:8080
 ```
 
 2. Open `app/client.html` in your browser
